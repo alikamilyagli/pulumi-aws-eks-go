@@ -1,0 +1,9 @@
+name: aws-go-eks
+runtime: go
+description: Deploys a container into an EKS cluster with a Managed Node Group.
+backend:
+  url: s3://terraform-state-buckett
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: https://github.com/pulumi/examples/tree/master/aws-go-eks

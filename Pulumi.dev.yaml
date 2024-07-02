@@ -1,0 +1,4 @@
+encryptionsalt: v1:mPfTJyfy3ko=:v1:Chr8+jGMgTg7Ri+s:2iXK2y1KpmLFrDgj2IpH8IRNXDKPPg==
+config:
+  aws:region: us-west-1
+  pulumi:template: https://github.com/pulumi/examples/tree/master/aws-go-eks
