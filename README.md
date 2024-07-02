@@ -48,7 +48,6 @@ To deploy your infrastructure, follow the below steps.
     ```
 
     - Update `backend: url` parameter in `Pulumi.yaml` to use S3 backend for consistent state management.
-    - Update `certificateArn` parameter in `variables.go` with your own certificate arn
 
 
 2. Run tests
