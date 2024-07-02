@@ -28,7 +28,7 @@ This project creates an AWS EKS Cluster with Pulumi & Go.
 
 ## Deploying the App
 
-To deploy your infrastructure, follow the below steps.
+To deploy the infrastructure, follow the below steps.
 
 ### Prerequisites
 
