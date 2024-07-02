@@ -3,18 +3,25 @@ This project creates an AWS EKS Cluster with Pulumi & Go.
 
 -[x] VPC Configuration
   - A private VPC with dedicated subnets (publicSubnet and privateSubnet) created for the EKS control plane and worker nodes.
+
 -[x] EKS Cluster
   - Deployed an autoscaling EKS cluster (eksCluster) within the private subnets using managed node groups (eks.ClusterArgs)
+
 -[x] TLS Certificate Management
+
 -[x] Security Best Practices 
   - IAM roles (eksRole) are established with necessary policies (eksServiceRolePolicy1, eksServiceRolePolicy2) attached. 
   - Security groups (clusterSg) restrict inbound traffic and ensure secure communication within the VPC.
+
 -[x] No Internet Access
   - The setup ensures the EKS cluster (eksCluster) is isolated from the internet
+
 -[x] Consistent State Management
   - Ensured by Pulumi
+
 -[x] Immutable Infrastructure
   - Ensured by Pulumi
+
 -[x] Testing Framework
   - Comprehensive testing is implemented, covering all critical aspects and scenarios.
 
