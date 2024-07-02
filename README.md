@@ -28,7 +28,7 @@ This project creates an AWS EKS Cluster with Pulumi & Go.
 
 ## Deploying the App
 
- To deploy your infrastructure, follow the below steps.
+To deploy your infrastructure, follow the below steps.
 
 ### Prerequisites
 
@@ -73,9 +73,9 @@ This project creates an AWS EKS Cluster with Pulumi & Go.
 
 5. Execute Pulumi to create the EKS Cluster:
 
-	```bash
-	pulumi up
-	```
+    ```bash
+    pulumi up
+    ```
 
 6. Export variables:
 
@@ -91,27 +91,25 @@ This project creates an AWS EKS Cluster with Pulumi & Go.
 
     To export kubeconfig of the EKS cluster
     ```bash
-	  pulumi stack output kubeconfig --show-secrets > kubeconfig.json
-	```
+    pulumi stack output kubeconfig --show-secrets > kubeconfig.json
+    ```
 
     To export TLS Certificate ARN
     ```bash
-	  pulumi stack output certificateArn
-	```
-   
-    
+    pulumi stack output certificateArn
+    ```
 
 7. Use kubeconfig to execute `kubectl` commands:
 
     ```bash
-	  KUBECONFIG=./kubeconfig.json kubectl get nodes
-	```
+    KUBECONFIG=./kubeconfig.json kubectl get nodes
+    ```
 
 8. Destroy the Pulumi stack and remove it:
 
-	```bash
-	pulumi destroy --yes
-	```
     ```bash
-	  pulumi stack rm --yes
-	```
+    pulumi destroy --yes
+    ```
+    ```bash
+    pulumi stack rm --yes
+    ```
