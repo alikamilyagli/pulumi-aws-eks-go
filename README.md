@@ -1,28 +1,28 @@
 # AWS Golang EKS Cluster
 This project creates an AWS EKS Cluster with Pulumi & Go.
 
--[x] VPC Configuration
+- [x] VPC Configuration
   - A private VPC with dedicated subnets (publicSubnet and privateSubnet) created for the EKS control plane and worker nodes.
 
--[x] EKS Cluster
+- [x] EKS Cluster
   - Deployed an autoscaling EKS cluster (eksCluster) within the private subnets using managed node groups (eks.ClusterArgs)
 
--[x] TLS Certificate Management
+- [x] TLS Certificate Management
 
--[x] Security Best Practices 
+- [x] Security Best Practices 
   - IAM roles (eksRole) are established with necessary policies (eksServiceRolePolicy1, eksServiceRolePolicy2) attached. 
   - Security groups (clusterSg) restrict inbound traffic and ensure secure communication within the VPC.
 
--[x] No Internet Access
+- [x] No Internet Access
   - The setup ensures the EKS cluster (eksCluster) is isolated from the internet
 
--[x] Consistent State Management
+- [x] Consistent State Management
   - Ensured by Pulumi
 
--[x] Immutable Infrastructure
+- [x] Immutable Infrastructure
   - Ensured by Pulumi
 
--[x] Testing Framework
+- [x] Testing Framework
   - Comprehensive testing is implemented, covering all critical aspects and scenarios.
 
 
@@ -41,10 +41,10 @@ This project creates an AWS EKS Cluster with Pulumi & Go.
 
 1. Clone this repository
     ```bash
-    git clone ... 
+    git clone git@github.com:alikamilyagli/pulumi-aws-eks-go.git
     ```
     ```bash
-    cd ...
+    cd pulumi-aws-eks-go
     ```
 
     - Update `backend: url` parameter in `Pulumi.yaml` to use S3 backend for consistent state management.
